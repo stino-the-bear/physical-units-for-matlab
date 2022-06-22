@@ -150,7 +150,7 @@ properties (Constant = true)
     % http://en.wikipedia.org
     % http://www.efunda.com/units/index.cfm
     
-    %---- length ----
+    %% ---- length ---- %%
 
     meter = scd(u.m,'meter') 
     km = scd(1e3*u.m,'km') % kilometer
@@ -230,14 +230,14 @@ properties (Constant = true)
     pc = scd(648000/pi*u.au,'pc') % parsec
     parsec = scd(u.pc,'parsec') 
 
-    %---- reciprocal length ----
+    %% ---- reciprocal length ---- %%
 
     dpt = scd(1/u.m,'dpt') % diopter
     diopter = scd(u.dpt,'diopter') 
     R_inf = scd(u.alpha/(4*pi*u.a0),'R_inf') % Rydberg constant
     RydbergConstant = scd(u.R_inf,'RydbergConstant') 
 
-    %---- area ----
+    %% ---- area ---- %%
 
     ft2 = scd(u.ft^2,'ft²') % square foot
     sqft = scd(u.ft2,'sqft') % square foot
@@ -278,7 +278,7 @@ properties (Constant = true)
     sqdm = scd(u.dm^2,'sqdm') % square decimeter
     squareDecimeter = scd(u.sqdm,'squareDecimeter')
 
-    %---- volume ----
+    %% ---- volume ---- %%
 
     m3 = scd(u.m^3,'m³') % cubic meter
     cc = scd(u.cm^3,'cc') % cubic centimeter
@@ -345,7 +345,7 @@ properties (Constant = true)
     gill = scd(4*u.floz,'gill') % US customary fluid gill
     gill_UK = scd(u.gal_UK/32,'gill_UK') % British imperial gill
 
-    %---- acceleration ----
+    %% ---- acceleration ---- %%
 
     g0 = scd(9.80665*u.m/u.s^2,'g0') % standard gravity
     g_0 = scd(u.g0,'g_0') % standard gravity
@@ -355,7 +355,7 @@ properties (Constant = true)
     standardGravity = scd(u.g0,'standardGravity') 
     Gal = scd(u.cm/u.s^2,'Gal') % gal
 
-    %---- force ----
+    %% ---- force ---- %%
 
     N = scd(u.kg*u.m/u.s^2,'N') % newton
     newton = scd(u.N,'newton') 
@@ -384,7 +384,7 @@ properties (Constant = true)
     sn = scd(u.kN,'sn') % sthène
     sthene = scd(u.sn,'sthene') 
 
-    %---- mass ----
+    %% ---- mass ---- %%
 
     kilogram = scd(u.kg,'kilogram')
     g = scd(1e-3*u.kg,'g') % gram
@@ -441,7 +441,7 @@ properties (Constant = true)
     technischeMasseneinheit = scd(u.TMU,'technischeMasseneinheit') 
     glug = scd(u.g*u.g0/(u.cm/u.s^2),'glug') 
 
-    %---- more force ----
+    %% ---- more force ---- %%
 
     pdl = scd(u.lbm*u.ft/u.s^2,'pdl') % poundal
     poundal = scd(u.pdl,'poundal') 
@@ -455,7 +455,7 @@ properties (Constant = true)
     ton_f = scd(u.tonf,'ton_f') % short ton force
     tonForce = scd(u.tonf,'tonForce') 
 
-    %---- mass per length ----
+    %% ---- mass per length ---- %%
 
     den = scd(u.gram/(9*u.km),'den') % denier
     denier = scd(u.den,'denier') 
@@ -463,7 +463,7 @@ properties (Constant = true)
     dtex = scd(u.tex/10,'dtex') % decitex
     decitex = scd(u.dtex,'decitex') 
 
-    %---- time ----
+    %% ---- time ---- %%
 
     second = scd(u.s,'second') 
     sec = scd(u.s,'sec') % second
@@ -502,7 +502,7 @@ properties (Constant = true)
     month = scd(u.yr/12,'month') % 1/12th julian year
     flick = scd(u.s/705600000,'flick') 
 
-    %---- frequency ----
+    %% ---- frequency ---- %%
 
     Hz = scd(1/u.s,'Hz') % hertz (NB: incompatible with angle and angular velocity)
     hertz = scd(u.Hz,'hertz') 
@@ -517,7 +517,7 @@ properties (Constant = true)
     Bd = scd(1/u.s,'Bd') % baud
     baud = scd(u.Bd,'baud') 
 
-    %---- energy ----
+    %% ---- energy ---- %%
 
     Nm = scd(u.N*u.m,'Nm') % newton-meter
     newton_meter = scd(u.Nm,'newton_meter') 
@@ -582,7 +582,7 @@ properties (Constant = true)
     therm = scd(u.thm,'therm') 
     quad = scd(1e15*u.BTU,'quad') % quad
 
-    %---- temperature ----
+    %% ---- temperature ---- %%
     % For reference: °C = °K-273.15; °F = °R-459.67.
 
     kelvin = scd(u.K,'kelvin') 
@@ -610,7 +610,7 @@ properties (Constant = true)
     TP = scd(u.mP*u.c^2/u.k,'TP') % Planck temperature
     PlanckTemperature = scd(u.TP,'PlanckTemperature') 
 
-    %---- pressure ----
+    %% ---- pressure ---- %%
 
     Pa = scd(u.N/u.sqm,'Pa') % pascal
     pascal = scd(u.Pa,'pascal') 
@@ -680,7 +680,7 @@ properties (Constant = true)
     ftAq = scd(u.ftH20,'ftAq') % foot of water
     footWater = scd(u.ftH20,'footWater') 
 
-    %---- viscosity ----
+    %% ---- viscosity ---- %%
 
     St = scd(u.sqcm/u.s,'St') % stokes
     stokes = scd(u.St,'stokes') 
@@ -693,7 +693,7 @@ properties (Constant = true)
     centipoise = scd(u.cP,'centipoise') 
     reyn = scd(u.lbf*u.s/u.sqin,'reyn') % reyn
 
-    %---- power ----
+    %% ---- power ---- %%
 
     W = scd(u.J/u.s,'W') % watt
     watt = scd(u.W,'watt') 
@@ -730,7 +730,7 @@ properties (Constant = true)
     var = scd(u.VA,'var')
     volt_ampere_reactive = scd(u.var,'volt_ampere_reactive')
 
-    %---- current ----
+    %% ---- current ---- %%
 
     amp = scd(u.A,'amp') % ampere
     ampere = scd(u.A,'ampere') 
@@ -749,7 +749,7 @@ properties (Constant = true)
     Bi = scd(u.abA,'Bi') % biot
     biot = scd(u.Bi,'biot') 
 
-    %---- charge ----
+    %% ---- charge ---- %%
 
     C = scd(u.A*u.s,'C') % coulomb
     coulomb = scd(u.C,'coulomb') 
@@ -775,7 +775,7 @@ properties (Constant = true)
     Ah = scd(u.A*u.hr,'Ah') % amp-hour
     amp_hour = scd(u.Ah,'amp_hour') 
 
-    %---- voltage ----
+    %% ---- voltage ---- %%
 
     V = scd(1*u.J/u.C,'V') % volt
     volt = scd(u.V,'volt') 
@@ -790,7 +790,7 @@ properties (Constant = true)
     uV = scd(1e-6*u.V,'uV') % microvolt
     microvolt = scd(u.uV,'microvolt') 
 
-    %---- resistance/conductance ----
+    %% ---- resistance/conductance ---- %%
 
     Ohm = scd(u.V/u.A,'Ohm') % ohm
     GOhm = scd(1e9*u.Ohm,'GOhm') % gigaohm
@@ -823,7 +823,7 @@ properties (Constant = true)
     G0 = scd(2*u.e^2/u.h_c,'G0') % conductance quantum
     conductanceQuantum = scd(u.G0,'conductanceQuantum') 
 
-    %---- capacitance ----
+    %% ---- capacitance ---- %%
 
     F = scd(u.A*u.s/u.V,'F') % farad
     farad = scd(u.F,'farad') 
@@ -836,7 +836,7 @@ properties (Constant = true)
     pF = scd(1e-12*u.F,'pF') % picofarad
     picofarad = scd(u.pF,'picofarad') 
 
-    %---- inductance ----
+    %% ---- inductance ---- %%
 
     H = scd(u.Ohm*u.s,'H') % henry
     henry = scd(u.H,'henry') 
@@ -855,7 +855,7 @@ properties (Constant = true)
     GH = scd(1e9*u.H,'GH') % gigahenry
     gigahenry = scd(u.GH,'gigahenry') 
 
-    %---- EM ----
+    %% ---- EM ---- %%
 
     T = scd(1*u.N/(u.A*u.m),'T') % tesla
     tesla = scd(u.T,'tesla') 
@@ -876,7 +876,7 @@ properties (Constant = true)
     Gb = scd(2.5/pi*u.A,'Gb') % gilbert
     gilbert = scd(u.Gb,'gilbert') 
 
-    %---- non-dimensionals ----
+    %% ---- non-dimensionals ---- %%
 
     percent = 0.01 % %
     pct = u.percent % %
@@ -895,7 +895,7 @@ properties (Constant = true)
     ppq = 1e-15 % part per quadrillion
     partPerQuadrillion = u.ppq 
     
-    %---- angles ----
+    %% ---- angles ---- %%
     % Note: angles are dimensionless
 
     rad = 1 % radian
@@ -914,14 +914,14 @@ properties (Constant = true)
     grad = u.turn/400 % gradian
     gradian = u.grad
     
-    %---- rotational speed ----
+    %% ---- rotational speed ---- %%
 
     rpm = scd(u.rev/u.min,'rpm') % revolution per minute
     revolutionPerMinute = scd(u.rpm,'revolutionPerMinute') 
     rps = scd(u.rev/u.s,'rps') % revolution per second
     revolutionPerSecond = scd(u.rps,'revolutionPerSecond') 
 
-    %---- velocity ----
+    %% ---- velocity ---- %%
 
     mps = scd(u.m/u.s,'mps') % meter per second
     meterPerSecond = scd(u.mps,'meterPerSecond') 
@@ -946,7 +946,7 @@ properties (Constant = true)
     mph = scd(u.mi/u.hr,'mph') % mile per hour
     milePerHour = scd(u.mph,'milePerHour') 
 
-    %---- volume flow rate ----
+    %% ---- volume flow rate ---- %%
 
     cfm = scd(u.ft^3/u.min,'cfm') % cubic foot per minute
     cubicFootPerMinute = scd(u.cfm,'cubicFootPerMinute') 
@@ -960,14 +960,14 @@ properties (Constant = true)
     lpm = scd(u.l/u.min,'lpm') % liter per minute
     literPerMinute = scd(u.lpm,'literPerMinute') 
 
-    %---- fuel economy ----
+    %% ---- fuel economy ---- %%
 
     l_100km = scd(u.l/(100*u.km),'l_100km') % liter per 100 km
     literPer100kilometer = scd(u.l_100km,'literPer100kilometer') 
     mpg = scd(u.mi/u.gal,'mpg') % mile per gallon
     milePerGallon = scd(u.mpg,'milePerGallon') 
 
-    %---- Luminance etc. ----
+    %% ---- Luminance etc. ---- %%
 
     candela = scd(u.cd,'candela') 
     asb = scd(u.cd/u.sqm,'asb') % apostilb
@@ -985,7 +985,7 @@ properties (Constant = true)
     nx = scd(1e-3*u.lx,'nx') % nox
     nox = scd(u.nx,'nox') 
 
-    %---- other derived SI ----
+    %% ---- other derived SI ---- %%
 
     mole = scd(u.mol,'mole') 
     kat = scd(u.mol/u.s,'kat') % katal
@@ -996,7 +996,7 @@ properties (Constant = true)
     Nms = scd(u.N*u.m*u.s,'Nms') % newton-meter-second
     newton_meter_second = scd(u.Nms,'newton_meter_second') 
 
-    %---- radiation ----
+    %% ---- radiation ---- %%
 
     Gy = scd(u.J/u.kg,'Gy') % gray
     gray = scd(u.Gy,'gray') 
@@ -1014,7 +1014,7 @@ properties (Constant = true)
     Ci = scd(3.7e10*u.Bq,'Ci') % curie
     curie = scd(u.Ci,'curie') 
 
-    %---- constants ----
+    %% ---- constants ---- %%
     
     i = 1i
     j = 1j
@@ -1062,7 +1062,7 @@ properties (Constant = true)
     radarDataMile = scd(2*u.dataMile/u.c,'radarDataMile') 
     radarKilometer = scd(2*u.km/u.c,'radarKilometer') 
 
-    %---- digital information ----
+    %% ---- digital information ---- %%
 
     nibble = scd(4*u.bit,'nibble') 
     B = scd(8*u.bit,'B') % byte
@@ -1116,7 +1116,7 @@ properties (Constant = true)
     Tbps = scd(1e12*u.bps,'Tbps') % terabit per second
     terabitPerSecond = scd(u.Tbps,'terabitPerSecond') 
 
-    %---- currency ----
+    %% ---- currency ---- %%
     % For display purposes - not for exchange rates.
     % See also mathworks.com/matlabcentral/fileexchange/47255
 
@@ -1143,6 +1143,10 @@ properties (Constant = true)
     % PS_SAE - net horsepower (SAE J1349)
     % PS_DIN - horsepower (DIN 70020)
     % dry volumes
+
+    %% ---- Inertia ---- %%
+    kgm2 = scd(u.kg*u.m2,'kgm2') % revolution per minute
+    kilograMeterSquare = scd(u.kgm2,'kilograMeterSquare') 
 end
 
 %% METHODS

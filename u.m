@@ -1146,7 +1146,7 @@ properties (Constant = true)
 
     %% ---- Inertia ---- %%
     kgm2 = scd(u.kg*u.m2,'kgm2') % revolution per minute
-    kilograMeterSquare = scd(u.kgm2,'kilograMeterSquare') 
+    kilogramMeterSquare = scd(u.kgm2,'kilogramMeterSquare') 
 end
 
 %% METHODS

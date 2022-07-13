@@ -1145,8 +1145,14 @@ properties (Constant = true)
     % dry volumes
 
     %% ---- Inertia ---- %%
-    kgm2 = scd(u.kg*u.m2,'kgm2') % revolution per minute
+    kgm2 = scd(u.kg*u.m2,'kgm2') % kilogram meter squared
     kilogramMeterSquare = scd(u.kgm2,'kilogramMeterSquare') 
+
+    %% ---- Thermodynamical properties ---- %%
+    Jpkg = scd(u.J/u.kg,'Jpkg') % enthalpy
+    joulePerKilogram = scd(u.Jpkg,'joulePerKilogram') 
+    JpkgK = scd(u.J/(u.kg*u.K),'JpkgK') % Entropy
+    joulePerKilogramKelvin = scd(u.JpkgK,'joulePerKilogramKelvin') 
 end
 
 %% METHODS
